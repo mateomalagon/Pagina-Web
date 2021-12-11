@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de TV - Electrónica Malagón</title>
+    <!-- enlace con la hoja de estilos -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- enlace con el favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- enlace con javascript -->
+    <script src="./javascripts/javascripts.js"></script>
+    <!-- si la fuente es de google fonts y no la descargo , pongo aqui el link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="container">
+        <nav class="topnav" id="myTopnav">
+            <a href="#hero" class="active">Home</a>
+            <a href="#introduction">¿Qué es?</a>
+            <a href="#tipos">Tipos</a>
+            <a href="#gallery">Galería</a>
+            <a href="#footer">Contacta con nosotros</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <section id="hero"><!--AQUI IRA LA IMAGEN GRANDE DE FONDO Y LA PRESENTACIÓN DEL SITIO-->
+            <h1>TARJETAS DE TV</h1>
+            <a href="#introduction"><p id="calltoaction"><b>Come with us!</b></p></a>
+
+            <!-- FLECHA DE VOLVER ARRIBA (PUEDO PONERLA EN CUALQUIER LUGAR DEL BODY) -->
+           <a href="#hero"> <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+
+        </section>
+        <section id="introduction">
+            <h1><u>¿Qué es?</u></h1>
+            <img id="tarjeta" src="./images/tarjeta.png" alt="Tarjeta de TV de tipo PCI Express"><!--imagen que acompaña al texto-->
+            <p>Una tarjeta de TV es básicamente un dispositivo (periférico) que permite que lleguen
+                señales de televisión en directo a tu ordenador y así poder ver los distintos tipos de
+                televisión en tu monitor. La señal puede ser recibida mediante una antena externa,
+                por una conexión a televisión por cable o mediante un receptor satelital.</p>
+            <p>La mayoría de las tarjetas de TV también funcionan como capturadoras de vídeo, lo
+                que les permite grabar programas de televisión en un disco duro. La tarjeta cuenta
+                con un sintonizador interno que permite cambiar los canales de televisión mientras
+                se visualizan mediante un mando a distancia por infrarrojos del que disponen.</p>
+            <p>Este periférico puede ser una tarjeta de expansión, generalmente de tipo PCI, o bien
+                un dispositivo externo que se conecta al puerto USB.</p>
+            <p>La tarjeta TV se inserta dentro de las ranuras de expansión o "Slots" integradas en
+                la placa base. Pueden aceptar la conexión de video caseteras VHS, reproductores
+                DVD, cable coaxial de la televisión de pago, etc.</p>
+        </section>
+        <section id="tipos">
+            <h1><u>Tipos de tarjetas de TV</u><b></b></h1>
+            <div class="tipos-wrapper">
+                <div class="mitad">
+                <p><b><u>Analógicas:</u></b> sirven para sintonizar los canales de televisión 
+                    abierta (la de toda la vida), que comúnmente
+                    se sintonizan en un televisor con una antena común y
+                    de forma gratuita, y la televisión por cable. La señal de
+                    audio es digitalizada en la salida del sintonizador.</p>
+                <p><b><u>Digitales:</u></b> existen dos tipos: las DVB-T, que sintonizan los
+                    canales de TDT, y las DVB-C que sintoniza la televisión
+                    digital por cable. Ninguna de las dos puede recibir ambos
+                    tipos de señal.</p>
+                <p><b><u>Sintonizadores híbridos:</u></b> el sintonizador puede
+                    actuar como analógico o digital, pero requiere
+                    una re-configuración que le provoque un reinicio.
+                    Cambiar entre ambos sistemas es bastante fácil,
+                    pero no inmediato.</p>
+                </div>
+                <div clas="mitad">
+                <p><b><u>Combo (combinados):</u></b> son similares a los
+                    sintonizadores híbridos, pero incorporan los dos sintonizadores,
+                    uno analógico y otro digital. La tarjeta funciona como un
+                    sintonizador analógico y un sintonizador digital simultáneamente.
+                    El cambio se puede hacer al vuelo al conmutar el chip por el que
+                    pasa la señal.</p>
+                <p><b><u>Satélite:</u></b> sintonizan los canales de la televisión recibidos por
+                    antena parabólica.</p>
+                <p><b><u>Mobile TV:</u></b> son equipos externos de
+                    sintonización para dispositivos móviles
+                    para recibir emisiones DVB-IPI, MediaFLO
+                    u One seg libres o de pago. Un caso
+                    particular fueron varios modelos de
+                    teléfonos inteligentes chinos basados en
+                    Android 2.3 que incorporaban un
+                    sintonizador de TV analógica con su
+                    correspondiente antena.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h1><u>Galería</u><b></b></h1>
+            <div class="cuarto"><img src="./images/analogica.jpg" alt="Tarjeta analógica">
+                <h2>Analógica</h2>
+            </div>
+            <div class="cuarto"><img src="./images/digital.jpg" alt="Tarjeta digital">
+                <h2>Digital</h2>
+            </div>
+            <div class="cuarto"><img src="./images/combo.jpg" alt="Tarjeta tipo combo">
+                <h2>Combo</h2>
+            </div>
+            <div class="cuarto"><img src="./images/satelite.jpg" alt="Tarjeta tipo satélite">
+                <h2>Satélite</h2>
+            </div>
+        </section>
+        
+        <footer id="footer">
+            <div class="secciones">
+
+                <div class="seccion">  
+                    <h3>Conócenos</h3>
+                    <a href="https://github.com/mateomalagon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Mateo Malagón</a><br>
+                    <a href="mailto:mateo.malagon.fp@iescampanillas.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> mateo.malagon.fp@iescampanillas.com</a>
+                </div>
+                <div class="seccion">
+                    <h3>Tarjetas más a fondo</h3>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Analógica</a><br>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Digital</a><br>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Híbrida</a><br>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Combo</a><br>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Satélite</a><br>
+                    <a href="https://es.wikipedia.org/wiki/Tarjeta_sintonizadora_de_televisi%C3%B3n" target="_blank"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> Mobile TV</a><br>
+                </div>  
+                <div class="seccion">
+                    <h3>Marcas de Capturadoras</h3>
+                    <a href="https://hauppauge.co.uk/spain/" target="_blank">Hauppage</a><br>
+                    <a href="https://www.nooelec.com/store/" target="_blank">NooElec</a><br>
+                    <a href="https://www.avermedia.com/es/" target="_blank">AverMedia</a><br>
+                    <a href="https://www.elgato.com/es" target="_blank">ElGato</a><br>
+                </div>  
+                <div class="seccion">
+                    <h3>Información del centro</h3>
+                    <a href="https://iescampanillas.com/" target="_blank"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Página Web</a><br>
+                    <a href="https://github.com/IESCampanillas" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Git Hub</a><br>
+                    <a href="https://twitter.com/ies_campanillas" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a><br>
+                    <a href="https://www.pta.es/" target="_blank"><i class="fa fa-code-fork" aria-hidden="true"></i> Página PTA</a><br>
+                </div>
+            </div>
+            <div id="electronica">
+                Electrónica<br>Malagón
+                <img id="tvemoji" src="./images/tv.png" alt="Emoji de TV">
+            </div>
+        </footer>
+    </div>
+
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
