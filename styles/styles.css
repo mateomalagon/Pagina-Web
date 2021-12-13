@@ -76,9 +76,7 @@ nav {
     height: 45vh;/* 100vh seria el alto del dispositivo movil, tablet o pc */
     position: relative;
 }
-#hero h1{top: 200px;
-    left: 20px;
-    font-family: HERO;
+#hero h1{font-family: HERO;
     font-size: 3em;
     color: #43910c;
     text-shadow:  2px 2px 2px  rgb(0, 0, 0);
